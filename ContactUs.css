@@ -128,7 +128,23 @@ nav div div i{
 .office_description div i{
     padding-right:10px;
 }
+.social_icons{
+    margin-top:15px;
+    display:flex;
+    gap:20px;
+    font-size:30px;
+}
+.social_icons div{
+    transition: transform 0.15s;
+    cursor:pointer;
+}
+.social_icons div:hover{
+    transform: translateY(-10px);
+}
 @media screen and (max-width:420px){
+    .office_description{
+        font-size:0.79rem;
+    }
     .office{
         font-size:1.3rem;
     }
