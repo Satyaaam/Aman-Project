@@ -1,0 +1,97 @@
+:root{
+    --font_familyHeading:'Prata', serif;
+    --font_familyContent:'Roboto', sans-serif;
+}
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: var(--font_familyContent);
+    overflow-x: hidden;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:lightcoral;
+    padding:5px 20px 5px 20px;
+}
+.logo_div{
+    font-size:3rem;
+    font-family:var(--font_familyHeading)
+}
+.contact_div{
+    display:flex;
+    gap:20px;
+    flex-direction:row;
+    align-items: center;
+}
+.mail_div{
+    font-size: 1.45rem;
+}
+.phone_div{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.phone_icon i{
+    font-size:1.7rem;
+}
+.phone_no span{
+    font-weight: bold;
+    font-size:1.5rem;
+}
+nav{
+    padding-left:20px;
+    padding-top:10px;
+}
+nav div{
+    display:flex;
+    gap:20px;
+}
+nav div li{
+    list-style: none;
+    font-size:1.3rem;
+}
+.service_menu{
+    padding-left:10px;
+    border:2px solid;
+    display:flex;
+    margin-top:10px;
+    flex-direction: column;
+}
+@media screen and (max-width:420px){
+    .contact_div{
+        flex-direction:column;
+        gap:2px;
+    }
+    .logo_div{
+        font-size:2rem;
+    }
+    .mail_div i{
+        font-size:0.75rem;
+    }
+    .mail_div span{
+        font-size:0.75rem;
+    }
+    .phone_icon i{
+        font-size:0.5rem;
+    }
+    .phone_no{
+        font-size:0.75rem;
+    }
+    .phone_no span{
+        font-size:1rem;
+    }
+}
+@media screen and (max-width:714px){
+    .mail_div{
+        font-size:1.25rem;
+    }
+    .phone_icon i{
+        font-size:1.4rem;
+    }
+    .phone_icon span{
+        font-size:1.1rem;
+    }
+}
