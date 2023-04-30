@@ -43,24 +43,63 @@ header{
 }
 nav{
     padding-left:20px;
+    background-color:darkslategrey;
+    width:100%;
+    color:#fff;
+    padding-bottom: 5px;
     padding-top:10px;
+    position:fixed;
+    backdrop-filter: blur(1rem);
 }
 nav div{
     display:flex;
     gap:20px;
 }
-nav div li{
-    list-style: none;
-    font-size:1.3rem;
+nav div div {
+    font-size: 1.2rem;
+    cursor:pointer;
 }
-.service_menu{
-    padding-left:10px;
-    border:2px solid;
+nav div div:hover{
+    text-decoration: underline;
+}
+nav div div i{
+    margin-left:-20px;
+    text-align: center;
+    margin-top:2px;
+}
+.hello{
+    position:relative;
+}
+.items{
     display:flex;
-    margin-top:10px;
-    flex-direction: column;
+    flex-direction:column;
+
 }
+.items a{
+    color:#000;
+    text-decoration: none;
+}
+.service_items{
+    position:absolute;
+    top:35px;
+    border:2px solid;
+    padding:5px 10px;
+    display:none;
+}
+/*.hello:hover + .service_items{*/
+/*    display:block;*/
+/*}*/
 @media screen and (max-width:420px){
+    nav{
+        padding-left:3px;
+    }
+    .container div{
+        font-size: 0.3rem;
+    }
+    .container{
+        gap:10px;
+        flex-wrap: wrap;
+    }
     .contact_div{
         flex-direction:column;
         gap:2px;
@@ -93,5 +132,8 @@ nav div li{
     }
     .phone_icon span{
         font-size:1.1rem;
+    }
+    .container div{
+        font-size:1rem;
     }
 }
