@@ -48,7 +48,6 @@ nav{
     color:#fff;
     padding-bottom: 5px;
     padding-top:10px;
-    position:fixed;
     backdrop-filter: blur(1rem);
 }
 nav div{
@@ -93,7 +92,52 @@ nav div div i{
 /*.hello:hover + .service_items{*/
 /*    display:block;*/
 /*}*/
+.company_name{
+    margin-top:10px;
+    margin-bottom:0px;
+    font-size:3rem;
+    margin-left:20px;
+    font-weight:bold;
+    font-family:var(--font_familyHeading);
+}
+.description{
+    padding:10px 20px;
+    color:darkslategrey;
+    font-size:1rem;
+}
+.office_section{
+    padding: 10px 20px;
+}
+.office{
+    background:pink;
+    width:fit-content;
+    padding:5px 25px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.office_description div{
+    margin-top:10px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.office_description div:hover{
+    transform:translateX(10px);
+}
+.office_description div i{
+    padding-right:10px;
+}
 @media screen and (max-width:420px){
+    .office{
+        font-size:1.3rem;
+    }
+    .description{
+        font-size: 0.7rem;
+    }
+    .company_name{
+        font-size:1.5rem;
+    }
     nav{
         padding-left:3px;
     }
@@ -128,6 +172,12 @@ nav div div i{
     }
 }
 @media screen and (max-width:714px){
+    .description{
+        font-size: 0.85rem;
+    }
+    .company_name{
+        font-size: 2.3rem;
+    }
     .mail_div{
         font-size:1.25rem;
     }
@@ -139,5 +189,8 @@ nav div div i{
     }
     .container div{
         font-size:1rem;
+    }
+    .office{
+        font-size:1.7rem;
     }
 }
